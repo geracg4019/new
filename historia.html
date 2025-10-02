@@ -1,0 +1,121 @@
+<!-- Página sobre la historia y origen del frontenis -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos y estilos visuales -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia y Origen del Frontenis</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #b7ffb7 0%, #388e3c 100%);
+            font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            color: #222;
+        }
+        header {
+            background: #2e7031;
+            color: #fff;
+            padding: 1.2rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+        nav button {
+            background: #43a047;
+            color: #fff;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background: #388e3c;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: rgba(255,255,255,0.95);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 2rem;
+        }
+        .notas {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .tabla-historia {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        .tabla-historia th, .tabla-historia td {
+            padding: 0.7rem;
+            border: 1px solid #43a047;
+            text-align: left;
+        }
+        .tabla-historia th {
+            background: #81c784;
+        }
+    </style>
+    <script>
+        function irAPagina(pagina) {
+            window.location.href = pagina;
+        }
+    </script>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Historia y Origen del Frontenis</h1>
+    </header>
+    <!-- Menú de navegación -->
+    <nav>
+        <button onclick="irAPagina('index.html')">Inicio</button>
+        <button onclick="irAPagina('tecnica.html')">Técnica y Equipamiento</button>
+    </nav>
+    <div class="container">
+        <!-- Nota introductoria -->
+        <div class="notas">
+            El frontenis nació en México a principios del siglo XX, como una variante del juego de frontón tradicional. Se popularizó rápidamente en España y otros países, evolucionando en reglas y equipamiento. Hoy es un deporte internacional con torneos y federaciones propias.
+        </div>
+        <!-- Tabla cronológica de la historia del frontenis -->
+        <table class="tabla-historia">
+            <caption><strong>Línea de tiempo del Frontenis</strong></caption>
+            <tr>
+                <th>Año</th>
+                <th>Evento</th>
+            </tr>
+            <tr>
+                <td>1900</td>
+                <td>Primeros juegos de frontón con raqueta en México</td>
+            </tr>
+            <tr>
+                <td>1920</td>
+                <td>Se define el nombre "frontenis" y se establecen reglas básicas</td>
+            </tr>
+            <tr>
+                <td>1940</td>
+                <td>Llega el frontenis a España y se adapta a los frontones locales</td>
+            </tr>
+            <tr>
+                <td>1970</td>
+                <td>Se crean federaciones y campeonatos internacionales</td>
+            </tr>
+            <tr>
+                <td>Actualidad</td>
+                <td>Deporte practicado en todo el mundo, con evolución en técnica y materiales</td>
+            </tr>
+        </table>
+        <!-- Mensaje final -->
+        <p style="text-align:center; font-size:1.1rem; margin-top:2rem;">
+            ¿Quieres saber cómo se juega? Visita la sección de <strong>Técnica y Equipamiento</strong>.
+        </p>
+    </div>
+</body>
+</html>

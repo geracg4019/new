@@ -1,0 +1,140 @@
+<!-- Página sobre técnica y equipamiento del frontenis -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos y estilos visuales -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnica y Equipamiento</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0ffe0 0%, #43a047 100%);
+            font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            color: #222;
+        }
+        header {
+            background: #388e3c;
+            color: #fff;
+            padding: 1.2rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+        nav button {
+            background: #388e3c;
+            color: #fff;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background: #2e7031;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: rgba(255,255,255,0.95);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 2rem;
+        }
+        .notas {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .tabla-tecnica {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        .tabla-tecnica th, .tabla-tecnica td {
+            padding: 0.7rem;
+            border: 1px solid #388e3c;
+            text-align: left;
+        }
+        .tabla-tecnica th {
+            background: #a5d6a7;
+        }
+        .imagenes {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        .imagenes img {
+            width: 200px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+    </style>
+    <script>
+        function irAPagina(pagina) {
+            window.location.href = pagina;
+        }
+    </script>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Técnica y Equipamiento</h1>
+    </header>
+    <!-- Menú de navegación -->
+    <nav>
+        <button onclick="irAPagina('index.html')">Inicio</button>
+        <button onclick="irAPagina('historia.html')">Historia y Origen</button>
+    </nav>
+    <div class="container">
+        <!-- Nota introductoria -->
+        <div class="notas">
+            Para jugar frontenis se requiere técnica, reflejos y el equipamiento adecuado. El golpeo de la pelota, la posición en la cancha y la elección de la raqueta son claves para destacar en este deporte.
+        </div>
+        <!-- Galería de imágenes de equipamiento y técnica -->
+        <div class="imagenes">
+            <img src="encordar-raqueta-frontenis-la-rioja-450x320.jpeg" alt="Raqueta Frontenis">
+            <img src="images.jpg" alt="Partido de Frontenis">
+        </div>
+        <!-- Tabla sobre técnica y equipamiento -->
+        <table class="tabla-tecnica">
+            <caption><strong>Aspectos técnicos y equipamiento</strong></caption>
+            <tr>
+                <th>Aspecto</th>
+                <th>Detalle</th>
+            </tr>
+            <tr>
+                <td>Golpeo</td>
+                <td>Se utilizan golpes de derecha, revés y remate, buscando precisión y potencia.</td>
+            </tr>
+            <tr>
+                <td>Posición</td>
+                <td>El jugador debe moverse rápido y anticipar el rebote de la pelota.</td>
+            </tr>
+            <tr>
+                <td>Raqueta</td>
+                <td>Ligera, con encordado resistente para pelotas de goma.</td>
+            </tr>
+            <tr>
+                <td>Pelota</td>
+                <td>De goma especial, diseñada para velocidad y rebote.</td>
+            </tr>
+            <tr>
+                <td>Indumentaria</td>
+                <td>Ropa deportiva cómoda y zapatillas con buen agarre.</td>
+            </tr>
+        </table>
+        <!-- Mensaje final -->
+        <p style="text-align:center; font-size:1.1rem; margin-top:2rem;">
+            ¿Te interesa la historia? Vuelve a la sección de <strong>Historia y Origen</strong>.
+        </p>
+    </div>
+</body>
+</html>

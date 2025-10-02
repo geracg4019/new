@@ -1,0 +1,154 @@
+<!-- Página principal sobre Frontenis con menú, imágenes, tabla y video -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos y estilos visuales -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontenis La Rioja</title>
+    <!-- Estilos CSS para el fondo, botones, tablas y estructura visual -->
+    <style>
+        body {
+            background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+            font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            color: #222;
+        }
+        header {
+            background: #388e3c;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+        nav button {
+            background: #43a047;
+            color: #fff;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        nav button:hover {
+            background: #2e7031;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: rgba(255,255,255,0.9);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 2rem;
+        }
+        .imagenes {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        .imagenes img {
+            width: 220px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        th, td {
+            padding: 0.8rem;
+            border: 1px solid #43a047;
+            text-align: center;
+        }
+        th {
+            background: #81c784;
+        }
+        .video {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .resumen {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+    <!-- Script para navegación entre páginas usando botones -->
+    <script>
+        function irAPagina(pagina) {
+            window.location.href = pagina;
+        }
+    </script>
+</head>
+<body>
+    <!-- Encabezado principal con título y subtítulo -->
+    <header>
+        <h1>Frontenis La Rioja</h1>
+        <p>Descubre el deporte de raqueta más dinámico y emocionante</p>
+    </header>
+    <!-- Menú de navegación con botones para ir a otras páginas -->
+    <nav>
+        <button onclick="irAPagina('historia.html')">Historia y Origen</button>
+        <button onclick="irAPagina('tecnica.html')">Técnica y Equipamiento</button>
+    </nav>
+    <!-- Contenedor principal del contenido -->
+    <div class="container">
+    <!-- Resumen breve sobre el frontenis -->
+    <div class="resumen">
+            <strong>¿Qué es el frontenis?</strong><br>
+            El frontenis es un deporte de raqueta que se juega en una cancha de frontón. Combina velocidad, precisión y estrategia, y es muy popular en España y México. Se juega con una pelota de goma y raquetas similares a las de tenis, pero adaptadas para este deporte. El objetivo es golpear la pelota contra el muro frontal y dificultar la devolución del rival.
+        </div>
+    <!-- Galería de imágenes relacionadas al frontenis -->
+    <div class="imagenes">
+            <img src="encordar-raqueta-frontenis-la-rioja-450x320.jpeg" alt="Raqueta Frontenis">
+            <img src="frontenis-mur-gauche-mexique.avif" alt="Frontón México">
+            <img src="images.jpg" alt="Partido de Frontenis">
+            <img src="images (1).jpg" alt="Jugadores de Frontenis">
+        </div>
+    <!-- Tabla con características principales del frontenis -->
+    <table>
+            <caption><strong>Características principales del Frontenis</strong></caption>
+            <tr>
+                <th>Elemento</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Raqueta</td>
+                <td>Ligera, con encordado especial para pelotas de goma</td>
+            </tr>
+            <tr>
+                <td>Pelota</td>
+                <td>De goma, rápida y con gran rebote</td>
+            </tr>
+            <tr>
+                <td>Cancha</td>
+                <td>Frontón de muro alto y largo</td>
+            </tr>
+            <tr>
+                <td>Jugadores</td>
+                <td>Individual o dobles</td>
+            </tr>
+        </table>
+    <!-- Video de YouTube sobre frontenis -->
+    <div class="video">
+            <iframe width="420" height="240" src="https://www.youtube.com/embed/pWlhaNlQdXY" title="Video Frontenis" frameborder="0" allowfullscreen></iframe>
+        </div>
+    <!-- Mensaje final invitando a explorar más secciones -->
+    <p style="text-align:center; font-size:1.1rem; margin-top:2rem;">
+            ¡Explora más sobre el frontenis en las secciones de <strong>Historia</strong> y <strong>Técnica</strong>!
+        </p>
+    </div>
+</body>
+</html>
